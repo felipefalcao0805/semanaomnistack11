@@ -64,9 +64,9 @@ export default function Incidents(){
            <Text style={styles.description}>Escolha um dos casos abaixo e salve o dia</Text>
 
            <FlatList 
-                //showsVerticalScrollIndicator={false}
+                showsVerticalScrollIndicator={false}
                 onEndReached={loadIncidents}
-               onEndReachedThreshold={0.2}
+                onEndReachedThreshold={0.7}
                 style={styles.incidentsList}
                 data={incidents}
                 keyExtractor={incident => String(incident.id)}
